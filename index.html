@@ -371,6 +371,7 @@
         </div>
       </section>
       <section class="container">
+        <div class="client-position">
         <h3 class="heading3i4">Nasi klienci</h3>
         <ul class="client">
           <li>
@@ -428,6 +429,7 @@
             </a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer-theme box">
@@ -489,11 +491,107 @@
           </li>
         </ul>
       </div>
+      <div class="newsletter-position">
+        <h5 class="heading5" class="sign-up-name">ZAPISZ SIĘ DO NEWSLETTERA</h5>
+        <form class="sign-up-position">
+          <label>
+            <input required name="sign-up-form" class="email-footer-position" type="email" placeholder="E-mail" />
+          </label>
+          <button type="submit" class="sign-up" >ZAPISZ SIĘ</button>
+        </form>
+      </div>
+      <div class="footer-icon-send">
+        <svg class="icons-h2" width="24px" height="24px">
+          <use class="footer-icon-send"
+          href="/goit-markup-hw-06/images/icons.svg#icon-icon-send">
+          </use>
+        </svg>
+      </div>
       </div>
       </div>
     </footer>
+
+
     <div  class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <h6 class="heading6">Zostaw swoje dane w formularzu poniżej</h6>
+
+
+        <div class="service-order-position">
+        <form>
+          <label class="name" for="name">
+            Imie
+            <input id="name" required type="text" minlength="3" maxlength="20" class="service-order-area"/>
+          <svg  width="12px" height="12px" class="position-icon-name">
+            <use 
+            href="/goit-markup-hw-06/images/icons.svg#icon-person-black-18dp-1">
+            </use>
+          </svg>
+        </label>
+        </div>
+
+
+        <div class="service-order-position">
+          <form>
+            <label class="phone" for="phone">
+              Telefon
+              <input id="phone" minlength="9" maxlength="9" min="0" max="9" required type="tel" class="service-order-area"/>
+            </label>
+          <svg width="12px" height="12px" class="position-icon-modal">
+            <use
+            href="/goit-markup-hw-06/images/icons.svg#icon-phone-black-18dp-1">
+            </use>
+          </svg>
+        </div>
+        <div class="service-order-position">
+          <form>
+            <label for="email" class="email">
+              Email
+              <input id="email" required type="email" class="service-order-area"/>
+            </label>
+          <svg width="12px" height="12px" class="position-icon-modal">
+            <use
+            href="/goit-markup-hw-06/images/icons.svg#icon-email-black-18dp-1">
+            </use>
+          </svg>
+        </div>
+        <div  class="service-order-position">
+          <form>
+            <label for="comment" class="comment" name="comment">
+              Komentarz
+            </label>
+              <input rows="5" cols="50" name="comment" placeholder="Wprowadź tekst" id="comment" required type="text" class="service-order-area-comment"></textarea>
+        </div>
+
+        
+        <div class="service-order-policy">
+          <div>
+          <form>
+            <label>
+              <input
+                type="checkbox"
+                name="checkbox-accept"
+                class="checkbox-hidden"
+                value="agreed"
+                required
+              />
+              <svg width="11px" height="8px" class="icon-vector">
+                <use
+                href="/goit-markup-hw-06/images/icons.svg#icon-vector">
+                </use>
+              </svg>
+              <svg width="16px" height="15px" style="outline: 1px solid #212121" class="rectangle">
+              </svg> 
+            </div>
+              <div>
+              Oświadczam iż akceptuję <a href="#" class="privacy-policy">Regulamin</a> i <a href="#" class="privacy-policy">Politykę Prywatności.</a>
+              </div>
+            </label>
+          </form>
+        </div>
+        <div class="service-order-send-position">
+        <button type="submit" class="service-order-send">Wyślij</button>
+       </div>
         <button type="button" class="close-btn" data-modal-close>x</button> 
       </div>
     </div>

@@ -510,15 +510,11 @@
       </div>
       </div>
     </footer>
-
-
     <div  class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h6 class="heading6">Zostaw swoje dane w formularzu poniżej</h6>
-
-
-        <div class="service-order-position">
         <form>
+        <div class="service-order-position">
           <label class="name" for="name">
             Imie
             <input id="name" required type="text" minlength="3" maxlength="20" class="service-order-area"/>
@@ -529,46 +525,39 @@
           </svg>
         </label>
         </div>
-
-
         <div class="service-order-position">
-          <form>
             <label class="phone" for="phone">
               Telefon
               <input id="phone" minlength="9" maxlength="9" min="0" max="9" required type="tel" class="service-order-area"/>
-            </label>
           <svg width="12px" height="12px" class="position-icon-modal">
             <use
             href="/goit-markup-hw-06/images/icons.svg#icon-phone-black-18dp-1">
             </use>
           </svg>
+        </label>
         </div>
         <div class="service-order-position">
-          <form>
             <label for="email" class="email">
               Email
               <input id="email" required type="email" class="service-order-area"/>
-            </label>
           <svg width="12px" height="12px" class="position-icon-modal">
             <use
             href="/goit-markup-hw-06/images/icons.svg#icon-email-black-18dp-1">
             </use>
           </svg>
+        </label>
         </div>
         <div  class="service-order-position">
-          <form>
             <label for="comment" class="comment" name="comment">
               Komentarz
             </label>
               <input rows="5" cols="50" name="comment" placeholder="Wprowadź tekst" id="comment" required type="text" class="service-order-area-comment"></textarea>
         </div>
-
-        
         <div class="service-order-policy">
           <div>
-          <form>
-            <label>
+            <label for="checkbox" class="label-checkbox">
               <input
+              id="checkbox"
                 type="checkbox"
                 name="checkbox-accept"
                 class="checkbox-hidden"
@@ -580,20 +569,18 @@
                 href="/goit-markup-hw-06/images/icons.svg#icon-vector">
                 </use>
               </svg>
-              <svg width="16px" height="15px" style="outline: 1px solid #212121" class="rectangle">
-              </svg> 
-            </div>
-              <div>
+            </div>  
+              <div class="statement">
               Oświadczam iż akceptuję <a href="#" class="privacy-policy">Regulamin</a> i <a href="#" class="privacy-policy">Politykę Prywatności.</a>
               </div>
             </label>
-          </form>
-        </div>
+          </div>
         <div class="service-order-send-position">
         <button type="submit" class="service-order-send">Wyślij</button>
        </div>
         <button type="button" class="close-btn" data-modal-close>x</button> 
       </div>
+    </form>
     </div>
     <script src="./js/modal.js"></script>
   </body>

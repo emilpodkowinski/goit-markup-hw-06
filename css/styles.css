@@ -867,13 +867,13 @@ ul {
 
 .service-order-policy {
    display: flex;
-   justify-content: center;
-   margin-top: 20px;
+   position: relative;
    font-size: 0.875rem;
    letter-spacing: 0.03em;
    line-height: 1.7;
    color: var(--grey);
    gap: 9px;
+   left: 55px;
 }
 
 .service-order-checkbox {
@@ -924,6 +924,9 @@ ul {
 
 .statement {
    display: block;
+   position: relative;
+   top: 23px;
+   left: 22px;
 }
 
 .checkbox-hidden {
@@ -932,27 +935,27 @@ ul {
 
 .name:has(> .service-order-area:focus) > .position-icon-name,
 .name:has(> .service-order-area:hover) > .position-icon-name {
-   fill: blue;
+   fill: #2196f3;
    transition: cubic-bezier(o.4, 0, 0.2, 1);
    transition-duration: 250ms;
 }
 
 .phone:has(> .service-order-area:focus) > .position-icon-modal,
 .phone:has(> .service-order-area:hover) > .position-icon-modal {
-   fill: blue;
+   fill: var(--blue);
    transition: cubic-bezier(o.4, 0, 0.2, 1);
    transition-duration: 250ms;
 }
 
 .email:has(> .service-order-area:focus) > .position-icon-modal,
 .email:has(> .service-order-area:hover) > .position-icon-modal {
-   fill: blue;
+   fill: #2196f3;
    transition: cubic-bezier(o.4, 0, 0.2, 1);
    transition-duration: 250ms;
 }
 
 .icon-vector {
-   border: black 1px solid;
+   border: #212121 1px solid;
    width: 16px;
    height: 16px;
    transform: translateY(25%);

@@ -528,8 +528,8 @@
         <div class="service-order-position">
             <label class="phone" for="phone">
               Telefon
-              <input id="phone" minlength="9" maxlength="9" min="0" max="9" required type="tel" class="service-order-area"/>
-          <svg width="12px" height="12px" class="position-icon-modal">
+              <input id="phone" minlength="9" maxlength="9" min="0" max="9" required type="tel" class="service-order-area" pattern="[0-9]{9}"/>
+          <svg width="13px" height="13px" class="position-icon-modal">
             <use
             href="/goit-markup-hw-06/images/icons.svg#icon-phone-black-18dp-1">
             </use>
@@ -540,7 +540,7 @@
             <label for="email" class="email">
               Email
               <input id="email" required type="email" class="service-order-area"/>
-          <svg width="12px" height="12px" class="position-icon-modal">
+          <svg width="15px" height="12px" class="position-icon-modal">
             <use
             href="/goit-markup-hw-06/images/icons.svg#icon-email-black-18dp-1">
             </use>
@@ -555,7 +555,10 @@
         </div>
         <div class="service-order-policy">
           <div>
-            <label for="checkbox" class="label-checkbox">
+            <label for="checkbox" class="label-checkbox" required>
+              <div class="statement">
+              Oświadczam iż akceptuję <a href="#" class="privacy-policy">Regulamin</a> i <a href="#" class="privacy-policy">Politykę Prywatności.</a>
+              </div>
               <input
               id="checkbox"
                 type="checkbox"
@@ -570,9 +573,6 @@
                 </use>
               </svg>
             </div>  
-              <div class="statement">
-              Oświadczam iż akceptuję <a href="#" class="privacy-policy">Regulamin</a> i <a href="#" class="privacy-policy">Politykę Prywatności.</a>
-              </div>
             </label>
           </div>
         <div class="service-order-send-position">
